@@ -2,7 +2,8 @@ sudo: required
 services:
     - docker
 
-install: true
+script:
+    - set -o pipefail
 
 after_success:
     - docker build -t inyps2/multi-client ./client
