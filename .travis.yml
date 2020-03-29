@@ -2,8 +2,7 @@ sudo: required
 services:
     - docker
 
-script:
-    - echo "skipping tests"
+install: true
 
 after_success:
     - docker build -t inyps2/multi-client ./client
