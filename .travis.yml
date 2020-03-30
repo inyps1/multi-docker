@@ -19,7 +19,7 @@ after_success:
     - docker push inyps2/multi-worker
 
 deploy:
-    edge: true
+    #edge: true
     provider: elasticbeanstalk
     region: us-east-1
     app: multi-docker
