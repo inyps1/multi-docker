@@ -3,7 +3,7 @@ services:
     - docker
 
 script:
-    - set -o pipefail
+    - set -o pipefail // to skip test
 
 after_success:
     - docker build -t inyps2/multi-client ./client
