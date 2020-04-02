@@ -4,6 +4,7 @@
     <form [formGroup]="fibForm" (ngSubmit)="onSubmit()">
         <label for="index">Enter your index: </label>
         <input formControlName="index" type="text"  id="index">
+        <br>
         <button [disabled]="!fibForm.valid">Submit</button>
     </form>
     <h3>Indexes I have seen:</h3>
